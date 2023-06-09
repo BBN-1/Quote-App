@@ -1,0 +1,106 @@
+.catalog-contianer {
+    padding-top: 40px;
+}
+
+.catalog-title {
+    margin: auto 0;
+    text-align: center;
+    padding-bottom: 30px;
+    color: var(--header-background-color);
+    letter-spacing: 1.2px;
+}
+
+.catalog-cards-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid #c9c9c9;
+    border-radius: 13px;
+    background-image: linear-gradient(
+        to left top,
+        #2a5a7c,
+        #6460a0,
+        #b7559e,
+        #f44e6f,
+        #fe761e
+    );
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f40137,
+        0 0 1px #f40137, 0 0 25px #f40137, inset 0 0 20px #f40137;
+}
+
+.quote-card {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    color: var(--text-color);
+    width: 400px;
+    height: 450px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    background-color: transparent;
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f4013662,
+        0 0 1px #f4013662, 0 0 10px #f4013662, inset 0 0 15px #f4013662;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.quote-card:hover {
+    background-color: #c9c9c9;
+    color: #121212;
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #d7e46177,
+        0 0 1px #9bc54762, 0 0 10px #9cdb5562, inset 0 0 15px #88d64c62;
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.quote-text,
+.quote-author {
+    flex-basis: 100%;
+}
+
+.quote-author {
+    align-self: flex-start;
+}
+
+.quote-text {
+    align-self: flex-start;
+}
+
+.quote-details-link {
+    text-decoration: none;
+
+    align-self: flex-end;
+
+    margin: 0 auto;
+    line-height: 42px;
+    font-size: medium;
+    font-weight: bold;
+    height: 45px;
+    padding: 0 40px 0 40px;
+    color: var(--highlight-red-color);
+    cursor: pointer;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    background-color: transparent;
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f4013662,
+        0 0 1px #f4013662, 0 0 10px #f4013662, inset 0 0 15px #f4013662;
+}
+
+.quote-details-link:hover {
+    color: #121212;
+    height: 45px;
+    padding: 0 40px 0 40px;
+
+    color: var(--highlight-red-color);
+    box-shadow: 0 0 1px #273b0f62, 0 0 5px #5a941862, 0 0 5px #d7e46177,
+        0 0 1px #5a941862, 0 0 10px #5a941862, inset 0 0 15px #27460462;
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}

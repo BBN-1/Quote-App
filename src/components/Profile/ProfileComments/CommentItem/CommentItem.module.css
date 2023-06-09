@@ -1,0 +1,63 @@
+.quote-card {
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-grow: 1;
+    color: var(--text-color);
+    width: 400px;
+
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    
+    background-color: transparent;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ 
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.quote-card:hover {
+    background-color: #c9c9c9;
+    color: #121212;
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #d7e46177,
+        0 0 1px #9bc54762, 0 0 10px #9cdb5562, inset 0 0 15px #88d64c62;
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.quote-card:hover .commentedOn-text{
+    color: var(--homepage-quote-color);
+}
+
+.quote-card:hover .comment-link{
+    color: var(--highlight-red-color)
+}
+
+
+
+
+
+.quote-text {
+    flex-basis: 100%;
+}
+
+.commentedOn-text {
+    color: #c9c9c9;
+}
+
+
+
+.comment-link {
+    text-indent: 5px;
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--homepage-quote-color);
+}
+
+

@@ -1,0 +1,43 @@
+.catalog-contianer {
+    padding-top: 40px;
+}
+
+.catalog-title {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: auto 0;
+    text-align: center;
+    padding-bottom: 30px;
+    color: var(--header-background-color);
+    letter-spacing: 1.2px;
+}
+
+.catalog-cards-container {
+    background-image: linear-gradient(to left top, #2a5a7c, #6460a0, #b7559e, #f44e6f, #fe761e);
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f40137,
+        0 0 1px #f40137, 0 0 25px #f40137, inset 0 0 20px #f40137;
+}
+
+.no-quotes {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+

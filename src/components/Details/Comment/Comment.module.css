@@ -1,0 +1,88 @@
+.details-comments-container-single-comment {
+    padding: 4px 0px 10px 0px;
+
+    background-color: transparent;
+    color: var(--text-color);
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details-comments-container-single-comment:hover {
+    background-color: transparent;
+}
+
+.details-comments-single-comment {
+    padding: 10px;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.details-comments-single-comment:hover {
+    padding: 10px;
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #c9c9c9;
+    color: #121212;
+
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.single-comment-text {
+    padding-top: 10px;
+    flex-basis: 100%;
+}
+
+.single-comment-author {
+    color: var(--homepage-quote-color);
+    text-align: left;
+}
+
+.details-comments-btn-container {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 450px;
+}
+
+.details-comments-container-deleteBtn,
+.details-comments-container-editLink {
+    background-color: transparent;
+    color: var(--text-color);
+    border-bottom: transparent;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 1px #ffffff, 0 0 5px #ece7e7, 0 0 5px #bebbb577,
+        0 0 1px #c0b9b262, 0 0 10px #e6dfd562, inset 0 0 15px #918d8862;
+}
+
+.details-comments-container-deleteBtn:hover,
+.details-comments-container-editLink:hover {
+    border-bottom: transparent;
+    border-radius: 7px;
+    color: var(--homepage-quote-color);
+    background-color: var(--header-background-color);
+    box-shadow: 0 0 1px #d64040, 0 0 5px #b42121, 0 0 5px #d10f0f77,
+        0 0 1px #db151562, 0 0 10px #cf0c0c62, inset 0 0 15px #d1080862;
+    transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.details-comments-container-editLink {
+    text-decoration: none;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.no-comments-text{
+    margin: 0 auto;
+    text-align: center;
+}

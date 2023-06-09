@@ -1,0 +1,18 @@
+.input-container {
+    color: aqua;
+}
+
+.error-msg {
+    width: 0px;
+    flex-basis: 100%;
+    color: var(--homepage-quote-color);
+    text-shadow: 4px 2px 3px #000000;
+
+    font-size: 19px;
+
+    display: none;
+}
+
+input:invalid[focused="true"] ~ .error-msg {
+    display: block;
+}

@@ -1,0 +1,65 @@
+.search-result-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+
+    padding-top: 20px;
+    border-radius: 7px;
+    align-self: flex-start;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.search-author-name {
+    color: var(--text-color);
+    text-shadow: 4px 2px 3px #000000;
+    text-align: left;
+    font-size: larger;
+}
+
+.search-author-quote {
+    padding-left: 10px;
+    color: var(--homepage-quote-color);
+    text-align: left;
+    font-size: large;
+    line-height: 39px;
+}
+
+.search-results-container {
+    width: 400px;
+    overflow: auto;
+    
+}
+
+.search-result-link:hover {
+    background-color: #c9c9c9;
+    color: #121212;
+
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header-searchBtn {
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--header-background-color);
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header-searchBtn:hover {
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #d7e46177,
+        0 0 1px #9bc54762, 0 0 10px #9cdb5562, inset 0 0 15px #88d64c62;
+    transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}

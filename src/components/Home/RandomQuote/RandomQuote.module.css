@@ -1,0 +1,72 @@
+.homepage-randomQuote-card {
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homepage-randomQuote-text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    flex-basis: 100%;
+}
+
+.homepage-randomQuote-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: var(--homepage-quote-color);
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.homepage-randomQuote-author {
+    color: var(--homepage-quote-color);
+    text-shadow: 2px 2px 5px black;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 28px;
+    align-self: end;
+}
+
+.homepage-randomQuote-button-wrapper {
+    padding-right: 40px;
+    display: flex;
+    flex-basis: 100%;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homepage-randomQuote-randomBtn,
+.homepage-randomQuote-downloadBtn,
+.homepage-randomQuote-showAllLink {
+    background-color: transparent;
+    color: var(--homepage-quote-color);
+    border-bottom: transparent;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 1px #ffffff, 0 0 5px #ece7e7, 0 0 5px #bebbb577,
+        0 0 1px #c0b9b262, 0 0 10px #e6dfd562, inset 0 0 15px #918d8862;
+}
+
+.homepage-randomQuote-randomBtn:hover,
+.homepage-randomQuote-downloadBtn:hover,
+.homepage-randomQuote-showAllLink:hover {
+    border-bottom: transparent;
+    border-radius: 7px;
+    color: var(--text-color);
+    background-color: var(--header-background-color);
+    box-shadow: 0 0 1px #d64040, 0 0 5px #b42121, 0 0 5px #d10f0f77,
+        0 0 1px #db151562, 0 0 10px #cf0c0c62, inset 0 0 15px #d1080862;
+    transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.homepage-randomQuote-showAllLink {
+    text-decoration: none;
+}

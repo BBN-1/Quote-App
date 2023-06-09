@@ -1,0 +1,31 @@
+.home-container {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 13px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url('/src/images/mountains_hero.png');
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.no-quotes {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
+

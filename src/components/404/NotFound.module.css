@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+.container-not-found {
+    width: 100%;
+    height: 100vh;
+}
+
+.neon {
+    font-family: "Monoton", cursive;
+    font-size: 130px;
+    text-align: left;
+
+    color: var(--highlight-red-color);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #f40137, 2px 0px 4px #ffd5ff, 3px 0px 4px #ffd5ff,
+        2px 0px 3px #f40137, 2px 3px 15px #f40137, 2px 0px 15px, 5px 0px 125px,
+        20px 0vw 200px #f40137, 40px 0vw 200px #f40137;
+}
+
+.flicker-slow {
+    animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+    animation: flicker 1s linear infinite;
+}
+
+.flicker-middle {
+    animation: flicker 4s linear infinite;
+}
+
+@keyframes flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        //text-shadow: none;
+        opacity: 0.99;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
