@@ -6,7 +6,6 @@
     background-color: whitesmoke;
     padding: 50px;
     z-index: 1000;
-    
 }
 
 .modal-container-overlay {
@@ -111,20 +110,14 @@
     padding: 20px;
     z-index: 1000;
     overflow: auto;
-    
 }
 
 .search-modal div {
-    
     width: 500px;
     height: 450px;
     padding-bottom: 15px;
     padding-right: 15px;
-    
- 
 }
-
-
 
 .search-modal input {
     cursor: pointer;
@@ -158,7 +151,6 @@
 }
 
 .search-modal span i {
-   
     position: absolute;
     color: var(--text-color);
     font-size: 22px;
@@ -166,8 +158,6 @@
     padding-right: 10px;
     padding-left: 10px;
 }
-
-
 
 .search-modal button {
     line-height: 45px;
@@ -192,4 +182,34 @@
     box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #d7e46177,
         0 0 1px #9bc54762, 0 0 10px #9cdb5562, inset 0 0 15px #88d64c62;
     transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (max-width: 768px) {
+    .search-modal {
+        width: 80vw;
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto;
+        padding: 2px;
+    }
+
+    .search-modal div {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .search-modal button {
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    .search-modal input {
+        margin-top: 10px;
+        width: 280px;
+    }
+
+    .search-modal span i {
+        display: none;
+    }
 }

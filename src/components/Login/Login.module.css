@@ -71,11 +71,11 @@
     height: 35px;
     line-height: 30px;
     text-indent: 40px;
-    
+
     width: 350px;
     border: 1px solid #c9c9c9;
     border-radius: 7px;
-    background: rgba(225,225,225,0.2);
+    background: rgba(225, 225, 225, 0.2);
     box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f4013662,
         0 0 1px #f4013662, 0 0 10px #f4013662, inset 0 0 15px #f4013662;
 }
@@ -142,4 +142,34 @@
     color: var(--homepage-quote-color);
 
     transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        width: 80%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .login-form input {
+        width: 80%;
+        max-width: 350px;
+        text-indent: 10px;
+    }
+
+    .login-icons {
+        display: none;
+    }
+
+    .login-cta-title {
+        font-size: 25px;
+    }
+
+    .login-cta-para {
+        text-align: center;
+    }
+
+    .login-notlogged-container {
+        padding-top: 30px;
+    }
 }

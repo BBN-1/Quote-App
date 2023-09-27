@@ -1,13 +1,19 @@
 .register-form-container {
-    
     margin: 70px auto;
     background-color: #121212;
     width: 70%;
     height: 650px;
     border: 1px solid #c9c9c9;
     border-radius: 13px;
-    background-image: linear-gradient(to left top, #2a5a7c, #6460a0, #b7559e, #f44e6f, #fe761e);
-    
+    background-image: linear-gradient(
+        to left top,
+        #2a5a7c,
+        #6460a0,
+        #b7559e,
+        #f44e6f,
+        #fe761e
+    );
+
     box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f40137,
         0 0 1px #f40137, 0 0 25px #f40137, inset 0 0 20px #f40137;
 }
@@ -55,14 +61,12 @@
 }
 
 .register-username-container,
- .register-email-container,
- .register-password-container,
- .register-passconfirm-container{
+.register-email-container,
+.register-password-container,
+.register-passconfirm-container {
     display: flex;
     flex-wrap: wrap;
-
 }
-
 
 .register-form input {
     font-size: larger;
@@ -70,11 +74,11 @@
     height: 37px;
     line-height: 37px;
     text-indent: 40px;
-    
+
     width: 350px;
     border: 1px solid #c9c9c9;
     border-radius: 7px;
-    background: rgba(225,225,225,0.2);
+    background: rgba(225, 225, 225, 0.2);
     box-shadow: 0 0 1px #c9c9c9, 0 0 5px #c9c9c9, 0 0 5px #f4013662,
         0 0 1px #f4013662, 0 0 10px #f4013662, inset 0 0 15px #f4013662;
 }
@@ -86,7 +90,6 @@
         0 0 1px #9bc54762, 0 0 10px #9cdb5562, inset 0 0 15px #88d64c62;
     transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 
 ::placeholder {
     color: #c9c9c9;
@@ -126,7 +129,6 @@
     transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-
 .register-notlogged-container {
     text-align: center;
     padding-top: 110px;
@@ -145,3 +147,48 @@
     transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+@media (max-width: 768px) {
+    .register-form-container {
+        width: 80%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .register-form input {
+        width: 100%;
+        max-width: 350px;
+        text-indent: 10px;
+    }
+
+    .username-icon {
+        display: none;
+    }
+
+    .register-cta-title {
+        font-size: 25px;
+    }
+
+    .register-cta-para {
+        text-align: center;
+    }
+
+    .register-notlogged-container {
+        padding-top: 30px;
+    }
+
+    .input-upper-section,
+    .input-lower-section {
+        flex-direction: column;
+    }
+
+    .input-lower-section,
+    .input-upper-section {
+        flex-basis: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .register-username-container i {
+        width: 350px;
+    }
+}

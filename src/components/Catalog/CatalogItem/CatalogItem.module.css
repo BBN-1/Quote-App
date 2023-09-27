@@ -45,12 +45,14 @@
 .quote-text,
 .quote-author {
     flex-basis: 100%;
+    padding-top: 13px;
 }
 
 .quote-author a{
     color: var(--text-color);
     align-self: flex-start;
     text-decoration: none;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -95,4 +97,13 @@
     box-shadow: 0 0 1px #273b0f62, 0 0 5px #5a941862, 0 0 5px #d7e46177,
         0 0 1px #5a941862, 0 0 10px #5a941862, inset 0 0 15px #27460462;
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+@media (max-width: 768px) {
+
+    .quote-card {
+        height: auto;
+    }
+
 }

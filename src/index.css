@@ -15,14 +15,22 @@
 
 .main-content {
     flex-grow: 1;
+   
 }
 
+/* PREVENT SCROLL BAR WHEN MOB NAV IS OPENED */
+body.mobile-nav-active {
+    overflow-y: hidden;
+}
+
+
 body {
-    /* overflow: hidden; */
+   
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
     
+
 
     background-image: linear-gradient(
         to bottom,
@@ -39,6 +47,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

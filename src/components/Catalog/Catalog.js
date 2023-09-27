@@ -15,7 +15,7 @@ const Catalog = () => {
     const [quotesPerPage, setQuotesPerPage] = useState(3);
     const { quotesData } = useContext(GameContext);
 
-    console.log(quotesData);
+   
 
     useEffect(() => {
         const fetchData = async () => {

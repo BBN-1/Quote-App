@@ -70,3 +70,33 @@
 .homepage-randomQuote-showAllLink {
     text-decoration: none;
 }
+
+
+@media (max-width: 768px) {
+    .homepage-randomQuote-text {
+        font-size: 25px;
+    }
+
+    .homepage-randomQuote-author {
+        font-size: 25px;
+    }
+
+    .homepage-randomQuote-button-wrapper {
+        padding-right: 5px;
+        display: flex;
+        flex-basis: 100%;
+        gap: 7px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .homepage-randomQuote-randomBtn,
+    .homepage-randomQuote-downloadBtn,
+    .homepage-randomQuote-showAllLink {
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+   
+}
